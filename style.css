@@ -1,3 +1,6 @@
+* {
+    font-family: Roboto;
+}
 body, html {
     height: 100%;
     margin: 0;
@@ -22,30 +25,54 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: white;
+    padding: 10px 40px;
+    gap: 30px;
+    
 }
 
 form {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
+.icon-search {
+    width: 40px;
+    height: 40px;
     border: none;
     color: black;
-    background-color: inherit;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .search-bar {
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
-    background-color: rgb(223, 223, 223);
-    width: 70%;
+    background-color: #e2e8f0;
+    width: 90%;
     height: 20px;
+    padding: 5px;
 }
 
 .header > .profile {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.icon-bell {
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile > .profile-icon {
@@ -59,8 +86,14 @@ form {
     object-fit: cover;
     border-radius: 50%;
 }
+
+.profile > p {
+    font-weight: bold;
+}
 .header > .card{
     display: flex;
+    font-weight: bold;
+    gap: 15px;
 }
 
 .card > .profile-icon {
@@ -68,9 +101,22 @@ form {
     height: 80px;
 }
 
+.header > .nav-bar {
+    align-self: center;
+}
+
 .header > .nav-bar > ul {
     display: flex;
+    gap: 30px;
 } 
+
+.nav-bar > ul > li >a {
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #0ea5e9;
+}
 
 .sidebar {
     background-color: blue;
